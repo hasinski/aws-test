@@ -26,7 +26,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: zip -r deployment.zip src/
+        run: zip -j deployment.zip src/*
       
       - name: AWS Lambda Deploy
         uses: appleboy/lambda-action@v0.2.0
@@ -38,7 +38,7 @@ jobs:
           zip_file: deployment.zip
           memory_size: 128
           timeout: 10
-          #handler: foobar
+          # handler: lambda_handler
           role: arn:aws:iam::136777249215:role/service-role/Test1-role-tb7s53f7
           runtime: python3.12
             
