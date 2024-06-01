@@ -5,4 +5,4 @@ def lambda_handler(event, context):
    print(f'boto3 version: {boto3.__version__}')
    print(f'botocore version: {botocore.__version__}')
 
-   return 'Github test'
+   return 'Github test 222'
