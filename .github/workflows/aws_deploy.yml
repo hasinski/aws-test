@@ -39,7 +39,7 @@ jobs:
           memory_size: 128
           timeout: 10
           #handler: foobar
-          role: arn:aws:lambda:${{ secrets.AWS_REGION }}:136777249215:function:Test1
+          role: arn:aws:iam::136777249215:role/service-role/Test1-role-tb7s53f7
           runtime: python3.12
             
 
